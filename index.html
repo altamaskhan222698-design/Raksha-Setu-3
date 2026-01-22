@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Raksha-Setu | Secure ID</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="secure-wrapper">
+        
+        <div id="publicView" class="privacy-card">
+            
+            <div class="security-badge">
+                <i class="fas fa-shield-alt"></i> AES-256 ENCRYPTED
+            </div>
+
+            <div class="profile-section">
+                <div class="hex-image">
+                    <img src="image_0.png" id="userPhoto" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'">
+                    <i class="fas fa-check-circle verified-icon"></i>
+                </div>
+                <h1 id="userName">Loading ID...</h1>
+                <p class="citizen-id">ID: <span id="userId">...</span></p>
+            </div>
+
+            <div class="sos-zone">
+                <p class="sos-hint">In case of accident, activate beacon:</p>
+                <button class="sos-btn" onclick="activateBeacon()">
+                    <div class="ripple"></div>
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span>SOS ALERT</span>
+                </button>
+            </div>
+
+            <div class="vault-entry" onclick="openSecureVault()">
+                <i class="fas fa-user-md"></i> MEDICAL PERSONNEL LOGIN
+            </div>
+
+            <div class="legal-footer">
+                Protected under Digital Personal Data Protection Act, 2023.
+                <br>Unauthorized access is a punishable offense.
+            </div>
+        </div>
+
+        <div id="doctorView" class="vault-card hidden">
+            <div class="vault-header">
+                <h2><i class="fas fa-file-medical-alt"></i> DECRYPTED RECORD</h2>
+                <button class="lock-btn" onclick="location.reload()">LOCK <i class="fas fa-lock"></i></button>
+            </div>
+
+            <div class="data-grid">
+                <div class="data-item critical">
+                    <label>Blood Type</label>
+                    <span id="bloodGroup">...</span>
+                </div>
+                <div class="data-item warning">
+                    <label>Allergies</label>
+                    <span id="allergies">...</span>
+                </div>
+                <div class="data-item">
+                    <label>History</label>
+                    <span id="history">...</span>
+                </div>
+                <div class="data-item">
+                    <label>Meds</label>
+                    <span id="meds">...</span>
+                </div>
+            </div>
+
+            <div class="action-zone">
+                <button class="guardian-btn" onclick="secureCall()">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <div class="text-box">
+                        <span>CALL GUARDIAN</span>
+                        <small>Secure Line: +91 9106271850</small>
+                    </div>
+                </button>
+            </div>
+
+            <div class="audit-log">
+                Access Log ID: <span id="hashKey">...</span> | Time: Now
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+                      </html>
+                      
