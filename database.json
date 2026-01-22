@@ -1,0 +1,29 @@
+{
+  "system_config": {
+    "version": "4.0.1-Global",
+    "encryption": "AES-256",
+    "compliance": "GDPR & DPDP Act 2023"
+  },
+  "citizen_profile": {
+    "name": "Altamas",
+    "id": "IND-89001-X",
+    "photo": "image_0.png",
+    "status": "VERIFIED"
+  },
+  "encrypted_medical_data": {
+    "blood": "O+ (Pos)",
+    "allergy": "Penicillin, Dust",
+    "history": "Appendix Surgery (2022)",
+    "meds": "Insulin (Type-2)"
+  },
+  "emergency_routing": {
+    "police_endpoint": "112",
+    "ambulance_endpoint": "108",
+    "guardian_contact": "9106271850",
+    "guardian_relation": "Father"
+  },
+  "access_control": {
+    "doctor_pin": "9565418581",
+    "hash_key": "0x7ff...a9"
+  }
+}
